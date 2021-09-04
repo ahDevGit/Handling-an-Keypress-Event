@@ -19,7 +19,12 @@ const closeModal = function () {
 for (let i = 0; i < showModalsBtn.length; i++)
   showModalsBtn[i].addEventListener('click', showModal);
 
-
-
 CloseModalBtn.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+
+//Keypress Event
+document.addEventListener('keydown', function (e) {
+  // console.log('A key was pressed');
+  console.log(e);
+})
